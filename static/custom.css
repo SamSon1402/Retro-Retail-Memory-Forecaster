@@ -1,0 +1,160 @@
+/* Custom CSS for Retro Gaming Retail Forecaster */
+
+/* Import retro fonts */
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:wght@400;700&display=swap');
+
+/* Main Theme */
+.main {
+    background-color: #0A1419;
+    color: #F8F8F8;
+}
+
+/* Override default Streamlit background */
+.stApp {
+    background-color: #0A1419;
+}
+
+/* Direct sidebar background override */
+section[data-testid="stSidebar"] {
+    background-color: #FFD0DC !important;
+}
+
+div[data-testid="stSidebarUserContent"] {
+    background-color: #FFD0DC !important;
+}
+
+/* Force sidebar background */
+.css-1544g2n {
+    background-color: #FFD0DC !important;
+}
+
+/* Headers */
+h1, h2, h3 {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    color: #33FF33;
+    text-shadow: 2px 2px 0px #005500;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 3rem !important;
+    border-bottom: 4px solid #33FF33;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem !important;
+    border-left: 4px solid #FF3366;
+    padding-left: 10px;
+}
+
+h3 {
+    font-size: 1.5rem !important;
+    color: #33CCFF;
+    border-bottom: 2px solid #33CCFF;
+    display: inline-block;
+}
+
+/* Sidebar headers */
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #0A1419 !important;
+    text-shadow: 1px 1px 0px #FF3366 !important;
+    border-left: none;
+    border-bottom: 2px solid #0A1419;
+}
+
+/* Sidebar text color */
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] div {
+    color: #0A1419 !important;
+}
+
+/* Text */
+p, div, span, label {
+    font-family: 'Space Mono', monospace;
+}
+
+/* Widgets */
+.stSelectbox, .stSlider, .stButton > button {
+    border: 2px solid #33FF33 !important;
+    border-radius: 0px !important;
+    background-color: #0A1419 !important;
+}
+
+/* Button */
+.stButton > button {
+    font-family: 'VT323', monospace !important;
+    font-size: 1.2rem !important;
+    color: #33FF33 !important;
+    text-shadow: 1px 1px 0px #005500 !important;
+    padding: 2px 15px !important;
+    transition: all 0.1s !important;
+}
+
+.stButton > button:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0px 0px 8px #33FF33 !important;
+}
+
+.stButton > button:active {
+    transform: scale(0.98) !important;
+}
+
+/* Widgets in sidebar */
+section[data-testid="stSidebar"] .stSelectbox > div > div,
+section[data-testid="stSidebar"] .stSlider [data-baseweb="slider"] {
+    background-color: rgba(10, 20, 25, 0.1) !important;
+}
+
+/* Widget buttons in sidebar */
+section[data-testid="stSidebar"] button {
+    background-color: #0A1419 !important;
+    color: #33FF33 !important;
+    border: 2px solid #33FF33 !important;
+}
+
+/* Metrics */
+.stMetric {
+    background-color: #0F1D24 !important;
+    border: 2px solid #FFCC00 !important;
+    border-radius: 0px !important;
+    box-shadow: 3px 3px 0px #996600 !important;
+    padding: 10px !important;
+}
+
+/* Card container for metrics */
+.metric-container {
+    background-color: #0F1D24;
+    border: 2px solid #FFCC00;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 4px 4px 0px #996600;
+}
+
+/* Plot background */
+.js-plotly-plot {
+    border: 2px solid #33CCFF !important;
+    background-color: #0A1419 !important;
+}
+
+/* Data frames */
+.dataframe {
+    font-family: 'Space Mono', monospace !important;
+    border: 2px solid #FF3366 !important;
+}
+
+/* Animation for blinking text */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
